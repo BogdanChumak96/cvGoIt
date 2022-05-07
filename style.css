@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/chucaratext');
+
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -22,16 +24,18 @@ body {
     padding: 0;
 }
 .wrapper{
+    font-family: 'Chucaratext', sans-serif;
     margin: 40px auto;
     max-width: 1200px;
     border: 1px solid black;
     height: 1309px;
     display: flex;
+    -webkit-box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.85); 
+    box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.85); 
 }
 
 .sidebar{
-    border: 1px solid black;
-    height: 1268px;
+    height: 1270px;
     width: 370px;
     padding-top: 40px;
     background-color: #1E2939;
@@ -62,7 +66,7 @@ ul li:hover{
     color: white;
 }
 .contacts__header h1{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .contacts__header ul{
@@ -88,9 +92,10 @@ ul li:hover{
 }
 .techskills ul li:before{
     color: red; /* Цвет маркера */
-    content: "◉"; /* Сам маркер */
+    content: "•"; /* Сам маркер */
     padding-right: 15px; /* Расстояние от маркера до текста */
 }
+/* • ◉*/
 .techskills ul li{
     margin-bottom: 7px;
 }
@@ -206,4 +211,10 @@ list-style: none;
 }
 .education h4{
     margin-bottom: 11px;
+}
+
+embed{
+    opacity: 0;
+    position: absolute;
+    top: -30px;
 }
